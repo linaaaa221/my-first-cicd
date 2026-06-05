@@ -1,5 +1,5 @@
 
-<htead>
+<heead>
     <title>Мой первый CI/CD проект</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600&display=swap" rel="stylesheet">
     <style>
@@ -26,7 +26,6 @@
             background: #ffffffdd;
             backdrop-filter: blur(2px);
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-            transition: all 0.2s ease;
         }
         p {
             color: #1f2a44;
@@ -41,6 +40,16 @@
             margin-top: 24px;
             text-align: center;
             border: 1px solid #cddfff;
+        }
+        .new-phrase {
+            background: #e6f4ea;
+            padding: 12px 18px;
+            border-radius: 18px;
+            color: #1e6f3f;
+            font-weight: 500;
+            margin-top: 16px;
+            text-align: center;
+            border: 1px solid #b8e0c2;
         }
         #timestamp {
             font-weight: 600;
@@ -64,9 +73,13 @@
     <div class="container">
         <p>Эта страница была автоматически развёрнута с помощью CI/CD.</p>
         <p>Время последнего обновления: <span id="timestamp"></span></p>
-        <!-- Новая фраза добавлена ниже -->
+        
         <div class="extra-phrase">
             ✨ Автоматизация делает разработку быстрее и надёжнее ✨
+        </div>
+
+        <div class="new-phrase">
+            ✅ Всё работает само
         </div>
     </div>
     
