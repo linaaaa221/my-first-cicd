@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html>
 
-<heead>
+<head>
     <title>Мой первый CI/CD проект</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600&display=swap" rel="stylesheet">
     <style>
@@ -69,6 +71,7 @@
 </head>
 
 <body>
+    {% bad_tag %}
     <h1>🚀 Привет, CI/CD!</h1>
     <div class="container">
         <p>Эта страница была автоматически развёрнута с помощью CI/CD.</p>
@@ -77,10 +80,14 @@
         <div class="extra-phrase">
             ✨ Автоматизация делает разработку быстрее и надёжнее ✨
         </div>
+
+        <div class="new-phrase">
+            ✅ Всё работает само
+        </div>
     </div>
     
     <script>
-        document.getElementById('timedstamp').textContent = new Date().toLocaleString();
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
     </script>
 </body>
 
