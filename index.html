@@ -3,35 +3,79 @@
 
 <head>
     <title>Мой первый CI/CD проект</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+            background: linear-gradient(145deg, #f0f4ff 0%, #e6edfa 100%);
         }
         h1 {
-            color: #2c3e50;
+            color: #1e466e;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            border-left: 5px solid #3a86ff;
+            padding-left: 20px;
+            margin-top: 0;
         }
         .container {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+            border: none;
+            padding: 28px;
+            border-radius: 24px;
+            background: #ffffffdd;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            transition: all 0.2s ease;
+        }
+        p {
+            color: #1f2a44;
+            margin-bottom: 16px;
+        }
+        .extra-phrase {
+            background: #eef3ff;
+            padding: 12px 18px;
+            border-radius: 18px;
+            color: #0057b3;
+            font-weight: 500;
+            margin-top: 24px;
+            text-align: center;
+            border: 1px solid #cddfff;
+        }
+        #timestamp {
+            font-weight: 600;
+            color: #0a4b8a;
+            background: #ffffffaa;
+            padding: 2px 8px;
+            border-radius: 24px;
+        }
+        small {
+            display: block;
+            margin-top: 20px;
+            color: #4a627a;
+            font-size: 0.85rem;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <h1>Привет, CI/CD!</h1>
+    <h1>🚀 Привет, CI/CD!</h1>
     <div class="container">
         <p>Эта страница была автоматически развёрнута с помощью CI/CD.</p>
         <p>Время последнего обновления: <span id="timestamp"></span></p>
+        <!-- Новая фраза добавлена ниже -->
+        <div class="extra-phrase">
+            ✨ Автоматизация делает разработку быстрее и надёжнее ✨
+        </div>
     </div>
+    <small>CI/CD pipeline · автоматический деплой</small>
 
     <script>
         document.getElementById('timestamp').textContent = new Date().toLocaleString();
     </script>
 </body>
+
 </html>
