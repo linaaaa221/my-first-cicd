@@ -1,0 +1,8 @@
+- name: Generate HTML with result
+  run: python generate_index.py
+
+- name: Deploy to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./          # или ./public, если вы создаёте отдельную папку
